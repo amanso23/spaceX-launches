@@ -1,0 +1,17 @@
+@import "variables";
+@import "funciones";
+
+@mixin button-styles {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    
+    &:hover {
+      background-color: ajustar-opacidad($primary-color, 10%);
+      color: #fff;
+    }
+  }

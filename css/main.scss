@@ -1,0 +1,37 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "mixins";
+
+body{
+    background-color: $background-color;
+}
+
+.launch-card{
+    background-color: $background-aux;
+}
+
+.badge{
+    background-color: $warning-color ;
+    font-size: $font-size;
+}
+
+.date, .rocket, .location{
+    color: $secondary-color !important;
+    
+    
+}
+h5{
+    white-space: nowrap !important;
+    max-width: 140px;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+h1{
+    color: $primary-color;
+}
+
+.btn{
+    @include button-styles;
+}
+

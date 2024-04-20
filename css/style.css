@@ -1,0 +1,184 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.description {
+    color: #495057;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.launch-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.launch-card {
+    max-width: 320px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.launch-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.launch-card-body {
+    padding: 15px;
+    
+}
+
+
+.mission-patch {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card-title {
+    color: #1e90ff;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+
+#loading-icon {
+    font-size: 4em;
+    color: #1e90ff;
+    margin: 20px;
+    text-align: center;
+}
+
+#sin-resultados{
+    display: none;
+    text-align: center;
+}
+
+.launch-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.toggle-details-btn {
+    cursor: pointer;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.toggle-details-btn:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.btn-load-more {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    font-size: 1.2em;
+}
+
+.search-icon {
+    margin-right: 8px;
+}
+
+#scrollUpBtn,
+#scrollDownBtn {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#scrollUpBtn:hover,
+#scrollDownBtn:hover {
+    opacity: 1;
+}
+
+#scrollUpBtn {
+    left: 0;
+    margin-left: 6px;
+}
+
+#scrollDownBtn {
+    right: 0;
+    margin-right: 6px;
+}
+
+.alert.aux{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 6px;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+#sin-resultados{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1368px) {
+    #scrollUpBtn,
+    #scrollDownBtn {
+        display: none !important; 
+    }
+}
